@@ -25,12 +25,12 @@ export class AppComponent {
   contactsCol: AngularFirestoreCollection<Contact>;
   contacts: Observable<Contact[]>;
 
-  Address: string;
-	Email: string;
-	FirstName: string;
-	LastName: string;
-	Mobile: number;
-	Phone: number;
+  Address:string;
+	Email:string;
+	FirstName:string;
+	LastName:string;
+	Mobile:number;
+	Phone:number;
 
   constructor(private afs: AngularFirestore){
 

@@ -1,8 +1,10 @@
+
 <input type="text" [(ngModel)]="FirstName" name="FirstName" placeholder="First Name ...">
 <input type="text" [(ngModel)]="LastName" name="LastName" placeholder="Last Name ...">
+<input type="text" [(ngModel)]="Email" name="Email" placeholder="Email ...">
 <textarea [(ngModel)]="Address" name="Address" placeholder="Address ..."></textarea>
 <input type="text" [(ngModel)]="Mobile" name="Mobile" placeholder="Mobile ...">
-<input type="text" [(ngModel)]="Contact" name="Contact" placeholder="Contact ...">
+<input type="text" [(ngModel)]="Phone" name="Phone" placeholder="Phone ...">
 <input type="submit" value="Add New Contact" (click)="addContact()">
 
 <ul *ngFor = "let contact of contacts | async">
@@ -10,6 +12,8 @@
     <strong>First Name: {{ contact.FirstName }}</strong>
     <br>
     <strong>Last Name: {{ contact.LastName }}</strong>
+    <br>
+    Email: {{ contact.Email}}
     <br>
     Address: {{ contact.Address }}
     <br>
